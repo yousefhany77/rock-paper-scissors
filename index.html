@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
     <link rel="shortcut icon" href="/Assets/icon.png" type="image/x-icon" />
     <title>Rock paper scissors</title>
   </head>
@@ -13,38 +13,38 @@
     <div class="container">
       <div class="score grid-column-span-3 flex-center">
         <div>
-          <h3>User</h3>
-          <p id="userScore">5</p>
+          <h3>You</h3>
+          <p id="userScore">0</p>
         </div>
         <div>
-          <h3>computer Score</h3>
-          <p id="computerScore">3</p>
+          <h3>computer</h3>
+          <p id="computerScore">0</p>
         </div>
       </div>
       <div class="game grid-column-span-3 flex-center">
-        <div class="userChoice">
-          <img src="/Assets/Paper-ico.svg" alt="" srcset="" />
+        <div >
+          <img id="userChoice" src="/Assets/Paper-ico.svg" alt="" srcset="" />
         </div>
-        <div class="message"><p>You suck!</p></div>
-        <div class="userChoice">
-          <img src="/Assets/Paper-ico.svg" alt="" srcset="" />
+        <div class="message box-shadow"><p>You Won!</p></div>
+        <div>
+          <img id="computerChoice" src="/Assets/Paper-ico.svg" alt="" srcset="" />
         </div>
       </div>
       <div class="userInput grid-column-span-3 flex-center">
         <ul>
           <li>
-            <div class="choice box-shadow">
-              <img src="/Assets/Rock-ico.svg" alt="Rock" />
+            <div data-choice="Rock" class="choice box-shadow">
+              <img data-choice="Rock" src="/Assets/Rock-ico.svg" alt="Rock" />
             </div>
           </li>
           <li>
-            <div class="choice box-shadow">
-              <img src="/Assets/Paper-ico.svg" alt="Rock" />
+            <div  data-choice="Paper" class="choice box-shadow">
+              <img data-choice="Paper" src="/Assets/Paper-ico.svg" alt="Rock" />
             </div>
           </li>
           <li>
-            <div class="choice box-shadow">
-              <img src="/Assets/Scissors-ico.svg" alt="Rock" />
+            <div data-choice="Scissors" class="choice box-shadow">
+              <img data-choice="Scissors" src="/Assets/Scissors-ico.svg" alt="Rock" />
             </div>
           </li>
         </ul>
