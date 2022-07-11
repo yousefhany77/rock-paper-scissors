@@ -4,6 +4,9 @@
   box-sizing: border-box;
   margin: 0;
 }
+:root{
+  font-size: 30px;
+}
 body {
   font-family: "Fredoka One", cursive;
   display: flex;
@@ -52,7 +55,7 @@ body {
   border-radius: 0.3em;
   padding: 0.5em;
   margin: 0 1em;
-  font-size: 30pt;
+  font-size: 2rem;
   color: rgb(250, 191, 82);
   text-shadow: 2px 2px rgb(196, 34, 196);
 }
